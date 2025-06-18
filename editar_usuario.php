@@ -11,7 +11,7 @@ email y nombre de usuario
 
 
 session_start();
-require 'database.php';
+require 'your_database';
 
 if (!isset($_SESSION['user_id'])) {
   header('Location: login.php');
@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 //Obtener datos actuales
-$stmt = $conn->prepare('SELECT id, name, email FROM users WHERE id = :id');
+$stmt = $conn->prepare('SELECT id, name, email FROM database WHERE id = :id');
 $stmt->bindParam(':id', $_SESSION['user_id']);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -32,7 +32,7 @@ if (!empty($_POST['name']) && !empty($_POST['email'])) {
   $nuevoEmail = trim($_POST['email']);
 
   // Verificar si ya existe otro usuario con ese nombre o email
-  $verificar = $conn->prepare('SELECT id FROM users WHERE (email = :email OR name = :name) AND id != :id');
+  $verificar = $conn->prepare('SELECT id FROM database WHERE (email = :email OR name = :name) AND id != :id');
   $verificar->bindParam(':email', $nuevoEmail);
   $verificar->bindParam(':name', $nuevoNombre);
   $verificar->bindParam(':id', $_SESSION['user_id']);
@@ -42,7 +42,7 @@ if (!empty($_POST['name']) && !empty($_POST['email'])) {
     $message = 'Ya existe un usuario con ese nombre o email.';
   } else {
     //Si no existe, actualiza
-    $update = $conn->prepare('UPDATE users SET name = :name, email = :email WHERE id = :id');
+    $update = $conn->prepare('UPDATE database SET name = :name, email = :email WHERE id = :id');
     $update->bindParam(':name', $nuevoNombre);
     $update->bindParam(':email', $nuevoEmail);
     $update->bindParam(':id', $_SESSION['user_id']);
