@@ -12,7 +12,7 @@ Además, cuando paga, se le envía un mail
 */
 include_once "funciones.php";
 iniciarSesionSiNoEstaIniciada();
-require 'database.php';
+require 'your_Database';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($user_id) {
-        $stmt = $conn->prepare("SELECT email, name FROM users WHERE id = :id");
+        $stmt = $conn->prepare("SELECT email, name FROM YOUR_DATABASE WHERE id = :id");
         $stmt->bindParam(':id', $user_id);
         $stmt->execute();
         $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -73,20 +73,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->CharSet = 'UTF-8';
         $mail->addEmbeddedImage('C:/xampp/htdocs/php-login/phpmailer/logo.png', 'logoCID');
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'tripwayturismo.oficial@gmail.com';
-        $mail->Password   = 'giehrkfdqhcwmfpb';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Host       = '';
+        $mail->SMTPAuth   = ;
+        $mail->Username   = '';
+        $mail->Password   = '';
+        $mail->SMTPSecure = '';
+        $mail->Port       = ;
 
-        $mail->setFrom('tripwayturismo.oficial@gmail.com', 'Tripway');
+        $mail->setFrom('EMAIL@GMAIL.COM', 'NAME');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
         $mail->Subject = "¡Gracias por tu compra!";
         $mail->Body = "
         <div style='font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 30px; text-align: center; color: #333;'>
-            <img src='cid:logoCID' alt='Tripway Logo' style='width: 150px; margin-bottom: 20px;'>
+            <img src='cid:logoCID' alt='' style='width: 150px; margin-bottom: 20px;'>
             <h2>Hola $name!</h2>
             <p>Gracias por comprar en <strong>Tripway</strong>.</p>
             <p>¡Esperamos que tengas las maletas hechas y estés listo para explorar junto a nosotros!</p>
@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <body>
         <div class="ticket">
             <div class="ticket-header">
-                <img src="phpmailer/logo.png" alt="Tripway Logo">
+                <img src="phpmailer/logo.png" alt="">
                 <h2>Comprobante de Pago</h2>
                 <p><?= $fecha ?></p>
             </div>
