@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once "database.php";
+require_once "your_database";
 $user = null;
 
 if (isset($_SESSION['user_id'])) {
-    $stmt = $conn->prepare("SELECT name, email FROM users WHERE id = :id");
+    $stmt = $conn->prepare("SELECT name, email FROM database WHERE id = :id");
     $stmt->bindParam(':id', $_SESSION['user_id']);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
