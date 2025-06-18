@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseñas | TripWay Turismo</title>
+  <link rel="stylesheet" href="resenas.css" />
+</head>
+<body>
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .productosf {
+      margin-top: 50px;
+    }
+    .review-form {
+      margin-top: 180px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+<div class="coso">
+    <h1>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    </h1>
+</div>
+
+  <section class="review-form">
+    <h2 id="titulo">Deja tu reseña</h2>
+    <form id="reviewForm">
+      <input type="text" id="name" placeholder="Tu nombre" required />
+      <input type="email" id="email" placeholder="Tu correo (opcional)" />
+      <textarea id="message" placeholder="Escribe tu reseña aquí..." required></textarea>
+      <label for="rating">Puntuación:
+        <select id="rating" required>
+          <option value="">Selecciona</option>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+      </label>
+      <button type="submit">Enviar Reseña</button>
+    </form>
+  </section>
+
+  <section class="reviews">
+    <h2>Reseñas de clientes</h2>
+    <div id="reviewsContainer"></div>
+  </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+
+  <script src="resenas.js"></script>
+</body>
+</html>

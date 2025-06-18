@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menunacional.css">
+    <title>Escandinavia | TripWay Turismo</title>
+</head>
+
+<body>
+
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .destino {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+
+
+
+    <div class="coso">
+        <h1>a</h1>
+        <h1>a</h1>
+        <h1>a</h1>
+    </div>
+
+
+    <section class="destino">
+        <div class="foto-caja">
+            <img src="internacionales/escandnava.jpg" alt="Bariloche">
+        </div>
+
+        <div class="info-caja">
+            <h1>ESCANDINAVIA Y NORTE DE EUROPA</h1>
+            <h2>Descripción:</h2>
+            <p>
+               Explorá el norte de Europa en una ruta inolvidable de 14 días por Noruega, Suecia, Dinamarca y Finlandia. Disfrutá paisajes árticos, fiordos espectaculares, diseño escandinavo y calidad de vida. Visitá ciudades como Oslo, Estocolmo y Copenhague, y viví experiencias únicas como la aurora boreal o un crucero por los fiordos. Ideal para viajeros curiosos y amantes del frío.
+            </p>
+            <h3>$1.320.000</h3>
+            <div class="botones">
+                <a href="tienda.php"><button class="btn comprar">COMPRAR</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="infos">
+        <div class="info">
+            <div class="carrusel">
+                <div class="slides">
+                    <img src="paquetes/puertom/puertom1.jpg" alt="Foto 1">
+                    <img src="paquetes/puertom/puertom2.jpg" alt="Foto 2">
+                    <img src="paquetes/puertom/puertom3.jpg" alt="Foto 3">
+                </div>
+            </div>
+
+
+            <div class="info-texto">
+                <hr class="divisor" />
+                <h2>🛶 Información ruta escandinavia y norte europeo</h2>
+                    <ul>
+                    <li><strong>❄️ Países:</strong> Noruega, Suecia, Finlandia, Dinamarca</li>
+                    <li><strong>📅 Duración:</strong> 14 días</li>
+                    <li><strong>🗺️ Destinos:</strong> Oslo – Estocolmo – Copenhague – Helsinki – Fiordos Noruegos</li>
+                    <li><strong>🏨 Hospedaje:</strong> Hoteles modernos 3★ y lodges con vistas al paisaje nórdico</li>
+                    <li><strong>🚆 Transporte:</strong> Trenes panorámicos, ferris y vuelos regionales</li>
+                    <li><strong>🎟️ Incluye:</strong> Crucero por los fiordos, museos de diseño y sauna finlandesa</li>
+                    <li><strong>🌌 Extras:</strong> Caza de auroras boreales, gastronomía local y arquitectura escandinava</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+</body>
+</html>

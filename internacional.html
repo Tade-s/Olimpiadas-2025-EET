@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nacional.css">
+    <title>Viajes Internacionales | TripWay Turismo</title>
+</head>
+<body>
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .productosf {
+      margin-top: 50px;
+    }
+    #titulo {
+      padding-top: 140px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+   
+
+
+<div class="background-blur"></div>
+<section class="productos-destacados">
+  <h2 id="titulo">VIAJES INTERNACIONALES</h2>
+
+  <div class="productosf">
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/europac.jpg" alt="Ruta Clasica Europea" />
+        <span class="etiqueta-descuento">-20%</span>
+      </div>
+      <div class="info-producto">
+        <h3>RUTA CLÁSICA EUROPEA</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio-original">$1.420.000</p>
+        <p class="precio-descuento">$1.336.000</p>
+        <a href="2menuclasicaeuropea.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/milyunanoches.jpg" alt="Ruta de las Mil y Una Noches" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA DE LAS MIL Y UNA NOCHES</h3>
+        <div class="estrellas">★★★★☆</div>
+        <p class="precio">$1.500.000</p>
+        <a href="2menurutamil.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/sudamerica.jpg" alt="Ruta Andina Sudamericana" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA ANDINA SUDAMERICANA</h3>
+        <div class="estrellas">★★★★☆</div>
+        <p class="precio">$1.450.000</p>
+        <a href="2menuandino.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/japon.jpg" alt="Ruta Japón" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA JAPÓN TRADICIONAL Y MODERNO</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio">$1.600.000</p>
+        <a href="2menutradicional.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/sudesteasiatico.jpg" alt="Sudeste Asiático" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA DEL SUDESTE ASIÁTICO</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio">$1.700.000</p>
+        <a href="2menuasiatico.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/eeuu.jpg" alt="Costa Oeste EE.UU." />
+        <span class="etiqueta-descuento">-5%</span>
+      </div>
+      <div class="info-producto">
+        <h3>RUTA COSTA OESTE DE EE.UU.</h3>
+        <div class="estrellas">★★★★☆</div>
+        <p class="precio-original">$1.620.000</p>
+        <p class="precio-descuento">$1.589.000</p>
+        <a href="2menueeuu.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/escandnava.jpg" alt="Escandinavia y Norte de Europa" />
+        <span class="etiqueta-descuento">-20%</span>
+      </div>
+      <div class="info-producto">
+        <h3>RUTA ESCANDINAVIA Y NORTE DE EUROPA</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio-original">$1.400.000</p>
+        <p class="precio-descuento">$1.320.000</p>
+        <a href="2menuescandinavia.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/safari.jpg" alt="Safari Africano" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA SAFARI AFRICANO</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio">$1.390.000</p>
+        <a href="2menuafrica.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+    <!-- Producto 9 -->
+    <div class="producto">
+      <div class="imagen-producto">
+        <img src="internacionales/caribe.jpg" alt="Caribe y Centroamérica" />
+      </div>
+      <div class="info-producto">
+        <h3>RUTA CARIBEÑA Y CENTROAMÉRICA</h3>
+        <div class="estrellas">★★★★★</div>
+        <p class="precio">$1.455.000</p>
+        <a href="2menucaribe.html" class="boton">MÁS INFO</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</div>
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

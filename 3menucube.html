@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menunacional.css">
+    <title>MirrorCube | TripWay Turismo</title>
+</head>
+
+<body>
+
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .destino {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+
+    <div class="coso">
+        <h1>a</h1>
+        <h1>a</h1>
+        <h1>a</h1>
+    </div>
+
+
+    <section class="destino">
+        <div class="foto-caja">
+            <img src="hoteles/cubo.jpeg" alt="Bariloche">
+        </div>
+
+        <div class="info-caja">
+            <h1>TREEHOTEL – CABAÑA “MIRRORCBE”</h1>
+            <h2>Descripción:</h2>
+            <p>
+                Mirrorcube es una cabaña suspendida entre árboles en el bosque sueco. Su exterior reflectante la camufla completamente con el entorno. Diseñada para dos personas, ofrece vistas panorámicas, diseño minimalista escandinavo y una experiencia íntima en plena naturaleza. Ideal para quienes buscan desconexión, arquitectura innovadora y conexión pura con el paisaje nórdico. Una experiencia única y ecológica.
+            </p>
+            <h3>$450.000</h3>
+            <div class="botones">
+                <a href="tienda.php"><button class="btn comprar">COMPRAR</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="infos">
+        <div class="info">
+            <div class="carrusel">
+                <div class="slides">
+                    <img src="paqueteshoteles/cube/cube1.jpg" alt="Foto 1">
+                    <img src="paqueteshoteles/cube/cube2.png" alt="Foto 2">
+                    <img src="paqueteshoteles/cube/cube3.jpg" alt="Foto 3">
+                </div>
+            </div>
+
+
+        <div class="info-texto">
+            <hr class="divisor" />
+            <h2>🌲 Información de la Cabaña Mirrorcube</h2>
+            <ul>
+                <li><strong>📍 Ubicación:</strong> Harads, Laponia sueca (Treehotel, Suecia)</li>
+                <li><strong>🏗️ Arquitectura:</strong> Cubo suspendido de aluminio, revestido con espejos</li>
+                <li><strong>🌿 Capacidad:</strong> Hasta 2 personas (ideal para parejas)</li>
+                <li><strong>🌌 Vistas:</strong> Panorámicas del bosque boreal, cielo nocturno despejado</li>
+                <li><strong>🛏️ Interior:</strong> Cama doble, baño ecológico, diseño escandinavo minimalista</li>
+                <li><strong>🪵 Acceso:</strong> Escalera o puente colgante desde el árbol anfitrión</li>
+                <li><strong>🌍 Sostenibilidad:</strong> Energía eficiente, construcción ecológica, mínimo impacto ambiental</li>
+                <li><strong>❄️ Actividades:</strong> Senderismo, auroras boreales, trineos y saunas nórdicas</li>
+            </ul>
+        </div>
+
+    </section>
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+</body>
+</html>

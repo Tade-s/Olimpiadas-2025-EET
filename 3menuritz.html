@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menunacional.css">
+    <title>Ritz-Carlton | TripWay Turismo</title>
+</head>
+
+<body>
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .destino {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+    <div class="coso">
+        <h1>a</h1>
+        <h1>a</h1>
+        <h1>a</h1>
+        
+    </div>
+
+
+    <section class="destino">
+        <div class="foto-caja">
+            <img src="hoteles/carltontokio.jpeg" alt="Bariloche">
+        </div>
+
+        <div class="info-caja">
+            <h1>HOTEL RITZ-CARLTON</h1>
+            <h2>Descripción:</h2>
+            <p>
+                The Ritz-Carlton Tokyo combina lujo moderno con tradición japonesa. Ubicado en Roppongi, ofrece vistas panorámicas de la ciudad y el Monte Fuji. Sus elegantes habitaciones, restaurantes premiados, spa completo y atención personalizada garantizan una experiencia inolvidable. Ideal para viajeros exigentes, este hotel cinco estrellas redefine la hospitalidad con detalles únicos, confort absoluto y una ubicación privilegiada.
+            </p>
+            <h3>$1.336.000</h3>
+            <div class="botones">
+                <a href="tienda.php"><button class="btn comprar">COMPRAR</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="infos">
+        <div class="info">
+            <div class="carrusel">
+                <div class="slides">
+                    <img src="paqueteshoteles/ritz/ritz1.jpeg" alt="Foto 1">
+                    <img src="paqueteshoteles/ritz/ritz2.jpeg" alt="Foto 1">
+                    <img src="paqueteshoteles/ritz/ritz3.jpeg" alt="Foto 1">
+                </div>
+            </div>
+
+
+        <div class="info-texto">
+        <hr class="divisor" />
+        <h2>🏨 Información del Hotel Ritz-Carlton, Tokyo</h2>
+        <ul>
+            <li><strong>📍 Ubicación:</strong> Roppongi, Minato-ku, Tokio, Japón</li>
+            <li><strong>🏢 Torre:</strong> Pisos 45 al 53 de la Tokyo Midtown Tower</li>
+            <li><strong>🛏️ Habitaciones:</strong> 245 habitaciones y suites con vistas panorámicas</li>
+            <li><strong>🍽️ Gastronomía:</strong> 7 restaurantes (incluye Azure 45 ⭐ Michelin y Hinokizaka japonés)</li>
+            <li><strong>💆 Spa:</strong> Piscina cubierta, sauna, jacuzzi, tratamientos con productos japoneses</li>
+            <li><strong>💼 Servicios:</strong> Club Lounge exclusivo, salones de reuniones y centro de negocios</li>
+            <li><strong>🎯 Atracciones cercanas:</strong> Tokyo Midtown, Parque Hinokicho, Museo Suntory, Ginza y Shibuya</li>
+            <li><strong>🚇 Acceso:</strong> A pasos de la estación Roppongi (líneas Toei y Hibiya)</li>
+        </ul>
+    </div>
+
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+
+</body>
+</html>

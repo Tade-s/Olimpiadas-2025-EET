@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menunacional.css">
+    <title>Misiones | TripWay Turismo</title>
+</head>
+
+<body>
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #titulo {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+
+    <div class="coso">
+        <h1>a</h1>
+        <h1>a</h1>
+        <h1>a</h1>
+    </div>
+
+
+    <section class="destino">
+        <div class="foto-caja">
+            <img src="nacionales/IGUAZU.jpg" alt="Bariloche">
+        </div>
+
+        <div class="info-caja">
+            <h1>MISIONES</h1>
+            <h2>Descripción:</h2>
+            <p>
+               Misiones te invita a descubrir las majestuosas Cataratas del Iguazú, una de las maravillas naturales del mundo. Caminá entre la selva, sentí la fuerza de la Garganta del Diablo y conocé la riqueza cultural guaraní. Ideal para amantes de la naturaleza, la aventura y la biodiversidad. Un viaje inolvidable al corazón verde del Litoral argentino.
+            <h3>$524.800</h3>
+            <div class="botones">
+                <a href="tienda.php"><button class="btn comprar">COMPRAR</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="infos">
+        <div class="info">
+            <div class="carrusel">
+                <div class="slides">
+                    <img src="paquetes/misiones/misiones1.jpg" alt="Foto 1">
+                    <img src="paquetes/misiones/misiones2.jpg" alt="Foto 2">
+                    <img src="paquetes/misiones/misiones3.jpg" alt="Foto 3">
+                </div>
+            </div>
+
+
+            <div class="info-texto">
+                <hr class="divisor" />
+                <h2>🛶 Información del Viaje a Misiones</h2>
+                <ul>
+                    <li><strong>📍 Lugar:</strong> Puerto Iguazú, Misiones – Litoral Argentino</li>
+                    <li><strong>📅 Duración:</strong> 4 días / 3 noches</li>
+                    <li><strong>🏨 Hotel:</strong> Hotel Saint George 4★ cerca del centro y de las Cataratas</li>
+                    <li><strong>🚌 Transporte:</strong> Bus semicama ida y vuelta</li>
+                    <li><strong>🎟️ Incluye:</strong> Excursión a Cataratas del Iguazú (lado argentino y brasileño) y Parque de las Aves</li>
+                    <li><strong>🌿 Extras:</strong> Entrada al Parque Nacional, guía bilingüe y seguro de viajero</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+
+</body>
+</html>

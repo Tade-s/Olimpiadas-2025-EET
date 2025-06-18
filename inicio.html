@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Inicio | TripWay Turismo</title>
+</head>
+<body>
+
+
+<nav>
+    <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #titulo {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+
+
+
+    <section class="imagen">
+        <img  src="nav/imagen1.png" alt="imagen">
+    </section>
+
+
+
+<div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="viajes\viaje1.png">
+                <div class="content">
+                    <div class="author">INTERNACIONAL</div>
+                    <div class="title">RUTA</div>
+                    <div class="topic">EUROPEA</div>
+                    <div class="des">
+                       Una ruta turística por Europa ofrece experiencias inolvidables: desde los canales de Ámsterdam hasta la historia de Roma, pasando por París, Berlín y Praga. Cada ciudad revela cultura, arte y gastronomía única. Viajar por tren permite disfrutar paisajes espectaculares y descubrir la diversidad del continente en poco tiempo.
+                    </div>
+                    <div class="buttons">
+                        <a href="2menuclasicaeuropea.html"><button>MAS INFO</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viaje2.png">
+                <div class="content">
+                    <div class="author">INTERNACIONAL</div>
+                    <div class="title">RUTA</div>
+                    <div class="topic">ASIATICA</div>
+                    <div class="des">
+                        Una ruta turística por Asia es un viaje fascinante. Desde los templos de Kioto hasta los rascacielos de Dubái, pasando por Bangkok, Pekín e India, cada destino ofrece historia milenaria, sabores exóticos y paisajes impactantes. La diversidad cultural y espiritual del continente convierte cada parada en una experiencia inolvidable.
+                    </div>
+                    <div class="buttons">
+                        <a href="2menuasiatico.html"><button>MAS INFO</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viaje3.png">
+                <div class="content">
+                    <div class="author">NACIONAL</div>
+                    <div class="title">RUTA</div>
+                    <div class="topic">PATAGONICA</div>
+                    <div class="des">
+                        Una ruta turística por la Patagonia argentina deslumbra con su naturaleza salvaje. Desde los glaciares de El Calafate hasta el fin del mundo en Ushuaia, pasando por Bariloche y la Ruta 40, ofrece lagos cristalinos, montañas imponentes y fauna única. Es un destino ideal para aventureros y amantes del paisaje.
+                    </div>
+                    <div class="buttons">
+                        <a href="1menucalafate.html"><button>MAS INFO</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viaje4.png">
+                <div class="content">
+                    <div class="author">NACIONAL</div>
+                    <div class="title">RUTA</div>
+                    <div class="topic">BARILOCHE</div>
+                    <div class="des">
+                        Bariloche cautiva con sus montañas y lagos cristalinos. Pasear por el cerro Otto o Catedral brinda vistas espectaculares. Los bosques invitan a trekking, las bahías a navegar. Degustar chocolate artesanal y cerveza local completa la experiencia. Cada estación aporta encanto especial: naturaleza, aventura y descanso se fusionan aquí.
+                    </div>
+                    <div class="buttons">
+                            <a href="1menubariloche.html"><button>MAS INFO</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="viajes/viajec1.png">
+                <div class="content">
+                    <div class="title">
+                        EUROPA
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viajec2.png">
+                <div class="content">
+                    <div class="title">
+                        ASIA
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viajec3.png">
+                <div class="content">
+                    <div class="title">
+                        PATAGONIA
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="viajes/viajec4.png">
+                <div class="content">
+                    <div class="title">
+                        BARILOCHE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+
+    </div>
+
+</div>
+    <section class="nosotros">
+        <h1>¿QUIENES SOMOS?</h1>
+        <p class="quieness">En TRIPWAY, somos una empresa de turismo mediana con amplia experiencia en la organización de viajes internacionales. Nacimos con la convicción de que viajar es mucho más que moverse de un lugar a otro: es descubrir culturas, crear recuerdos y vivir experiencias transformadoras. Nuestro equipo está conformado por profesionales apasionados por el turismo y comprometidos con brindar un servicio cercano, confiable y de alta calidad.
+        Nos especializamos en diseñar itinerarios únicos que se adaptan a los intereses y necesidades de cada cliente, asegurando atención personalizada antes, durante y después de cada viaje. Gracias a nuestras alianzas estratégicas con operadores turísticos de distintos países, garantizamos seguridad, organización y experiencias inolvidables en cada destino.</P><br>
+        <P class="mision">Nuestra MISION es brindar experiencias de viaje internacionales que inspiren, conecten y transformen, superando las expectativas de nuestros clientes mediante un servicio honesto, humano y eficiente.</P><br>
+        <P class="vision">Nuestra VISION es ser una empresa turística reconocida internacionalmente por la excelencia de nuestros servicios, la innovación constante y nuestro compromiso con la sostenibilidad y la satisfacción plena de cada viajero.</p>
+    </section>
+    
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+
+
+
+
+    <script src="inicio.js"></script>    
+</body>
+</html>

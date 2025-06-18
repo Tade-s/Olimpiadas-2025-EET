@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoteles | TripWay Turismo</title>
+  <link rel="stylesheet" href="nacional.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <style>
+      @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #titulo {
+      padding-top: 120px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #buscador {
+        width: 100%;
+        max-width: 300px;
+    }
+  }  
+  </style>  
+  <div class="nav-left">
+    <img src="nav/TripWay.png" alt="Logo" class="logo">
+    <h1>TripWay<br>Turismo</h1>
+  </div>
+
+  <div class="nav-center">
+    <a href="inicio.html">INICIO</a>
+    <a href="resenas.html">RESEÑAS</a>
+
+    <!-- Dropdown VIAJES -->
+    <div class="dropdown">
+      <button class="dropbtn">VIAJES</button>
+      <div class="dropdown-content">
+        <a href="nacional.html">NACIONAL</a>
+        <a href="internacional.html">INTERNACIONAL</a>
+      </div>
+    </div>
+
+    <!-- Dropdown ALQUILER -->
+    <div class="dropdown">
+      <button class="dropbtn">ALQUILER</button>
+      <div class="dropdown-content">
+        <a href="hoteles.html">ESTADIA</a>
+        <a href="veiculos.html">VEHÍCULOS</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="nav-right">
+    <input type="text" id="buscador" placeholder="Buscar destino...">
+    <button onclick="buscarPaquete()">
+      <img src="nav/buscar.png" alt="Buscar" class="icono">
+    </button>
+    <a href="ver_carrito.php"><img src="nav/carrito.png" alt="Carrito" class="icono"></a>
+    <a href="user.php"><img src="nav/icono.png" class="icono"></a>
+  </div>
+
+  <script src="lupa.js"></script>
+</nav>
+
+  <div class="background-blur"></div>
+
+  <section class="productos-destacados">
+    <h2 id="titulo">HOSPEDAJE</h2>
+
+
+<div class="productosf">
+
+  <!-- Producto 1: Tucumán -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/carltontokio.jpeg" alt="Tucumán" />
+      <span class="etiqueta-descuento">-20%</span>
+    </div>
+    <div class="info-producto">
+      <h3>THE RITZ-CARLTON TOKIO</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$1.420.000</p>
+      <p class="precio-descuento">$1.336.000</p>
+      <a href="3menuritz.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 2: Salta-jujuy -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/sands.jpeg" alt="Salta-Jujuy" />
+      <span class="etiqueta-descuento">-15%</span>
+    </div>
+    <div class="info-producto">
+      <h3>MARIANA BAY SANDS</h3>
+      <div class="estrellas">★★★★☆</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$520.000</p>
+      <p class="precio-descuento">$442.000</p>
+      <a href="3menusans.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 3: catamarca -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/plazahotel.jpeg" alt="catamarca" />
+      <span class="etiqueta-descuento">-10%</span>
+    </div>
+    <div class="info-producto">
+      <h3>THE PLAZA HOTEL</h3>
+      <div class="estrellas">★★★★☆</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$1.500.000</p>
+      <p class="precio-descuento">$1.450.000</p>
+      <a href="3menuplaza.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 4: puerto madryn -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/cubo.jpeg" alt="Mendoza" />
+      <span class="etiqueta-descuento">-25%</span>
+    </div>
+    <div class="info-producto">
+      <h3>TREEHOTEL – CABAÑA “MIRRORCBE”</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$600.000</p>
+      <p class="precio-descuento">$450.000</p>
+      <a href="3menucube.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 5: Bariloche -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/aman.jpeg" alt="Bariloche" />
+      <span class="etiqueta-descuento">-30%</span>
+    </div>
+    <div class="info-producto">
+      <h3>AMAN KYOTO – CABAÑA GARDEN VILLA</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$700.000</p>
+      <p class="precio-descuento">$490.000</p>
+      <a href="3menuaman.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 6: Córdoba -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/dana.jpeg" alt="Córdoba" />
+      <span class="etiqueta-descuento">-10%</span>
+    </div>
+    <div class="info-producto">
+      <h3>CABAÑAS LAS TERRAZAS DE DANA</h3>
+      <div class="estrellas">★★★★☆</div>
+      <h2>Precio por noche:</h2>
+      <p class="precio-original">$380.000</p>
+      <p class="precio-descuento">$342.000</p>
+      <a href="3menudana.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 7: Cataratas del Iguazú -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/tragua.jpeg" alt="Cataratas del Iguazú" />
+      <span class="etiqueta-descuento">-18%</span>
+    </div>
+    <div class="info-producto">
+      <h3>CASA “LA TAGUA”</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>      
+      <p class="precio-original">$440.000</p>
+      <p class="precio-descuento">$324.800</p>
+      <a href="3menutagua.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 8: El Calafate -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/lake.avif" alt="El Calafate" />
+      <span class="etiqueta-descuento">-12%</span>
+    </div>
+    <div class="info-producto">
+      <h3>CASA “BLUE RIDGE HIDEAWAY”</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>     
+      <p class="precio-original">$800.000</p>
+      <p class="precio-descuento">$704.000</p>
+      <a href="3menublue.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+
+  <!-- Producto 9: mar del plata -->
+  <div class="producto">
+    <div class="imagen-producto">
+      <img src="hoteles/montaña.jpeg" alt="El Calafate" />
+      <span class="etiqueta-descuento">-12%</span>
+    </div>
+    <div class="info-producto">
+      <h3>CASA "REFUGIO DE MONTAÑA"</h3>
+      <div class="estrellas">★★★★★</div>
+      <h2>Precio por noche:</h2>      
+      <p class="precio-original">$400.000</p>
+      <p class="precio-descuento">$336.000</p>
+      <a href="3menumontaña.html" class="boton">MÁS INFO</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="nav/TripWayf.png" alt="Tripway Turismo">
+    </div>
+
+    <div class="redes">
+        <a href="#"><img src="redes/fblg.png" alt="Facebook" /></a>
+        <a href="#"><img src="redes/iglg.png" alt="Instagram" /></a>
+        <a href="#"><img src="redes/wsplg.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="redes/xlg.png" alt="X" /></a>
+    </div>
+    <DIV class="correo">tripwayturismo.oficial@gmail.com</DIV>
+</footer>
+
+</body>
+</html>

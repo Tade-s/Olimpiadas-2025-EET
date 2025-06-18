@@ -1,0 +1,3 @@
+MYSQL_DATABASE_NAME=php_login_database
+MYSQL_USER=root
+MYSQL_PASSWORD=
