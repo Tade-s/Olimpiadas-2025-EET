@@ -1,6 +1,8 @@
                               ----PROYECTO OLIMPIADAS 2025----
 ESTE REPOSITORIO DE GITHUB CONTIENE EL PROYECTO PARA OLIMPIADAS 2025 INET DE PROGRAMACIÓN
 -----------------------------------------------------------------------------------------
+DEBES TENER EN CUENTA QUE EL PROYECTO SE REALIZÓ EN UN SERVIDOR LOCAL (XAMPP) ADAPTA EL CÓDIGO PARA TUS NECESIDADES
+--------------------------------------------------------------------------------------------------------------------
 
 CONSTA DE UNA PÁGINA WEB CON:
 -Interfaz de usuario
