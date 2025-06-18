@@ -16,13 +16,13 @@ if (isset($_SESSION['user_id'])) {
   exit;
 }
 
-require 'database.php';
+require 'your_database';
 require 'funciones.php';
 
 $message = '';
 
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
-  $records = $conn->prepare('SELECT id, email, password, rol FROM users WHERE email = :email');
+  $records = $conn->prepare('SELECT id, email, password, rol FROM database WHERE email = :email');
   $records->bindParam(':email', $_POST['email']);
   $records->execute();
   $results = $records->fetch(PDO::FETCH_ASSOC);
