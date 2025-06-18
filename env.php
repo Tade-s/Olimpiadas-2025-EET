@@ -1,3 +1,3 @@
-MYSQL_DATABASE_NAME=php_login_database
+MYSQL_DATABASE_NAME=tu_carpeta_base_datos
 MYSQL_USER=root
 MYSQL_PASSWORD=
