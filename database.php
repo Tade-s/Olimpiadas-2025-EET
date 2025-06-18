@@ -8,10 +8,10 @@ Este código PHP realiza la función de conectar la base de datos
 @date 11/06/2025
 */
 
-$server = 'localhost:3306';
+$server = '';
 $username = 'root';
 $password = '';
-$database = 'php_login_database';
+$database = 'database';
 
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;charset=utf8", $username, $password);
