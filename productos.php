@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Verifica que sea admin
-if (!isset($_SESSION['user_rol']) || $_SESSION['user_rol'] !== 'admin') {
+if (!isset($_SESSION['YOUR_DATABASE']) || $_SESSION['YOUR_DATABASE'] !== 'admin') {
     header("Location: acceso_denegado.php");
     exit;
 }
