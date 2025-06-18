@@ -1,0 +1,164 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(63, 81, 107); /* ✅ agregado */
+  backdrop-filter: blur(3px); /* lo dejamos si querés efecto de desenfoque */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 999;
+  font-family: 'Lucida Sans', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.section {
+  padding-top: 200px;
+}
+
+/* ✅ Colores de texto blancos para visibilidad */
+nav a,
+nav h1,
+.dropbtn,
+.dropdown-content a {
+  color: white;
+}
+
+nav a:hover,
+.dropbtn:hover {
+  color: #f0f0f0;
+}
+
+/* IZQUIERDA */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* CENTRO */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+}
+
+.nav-center a,
+.dropbtn {
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* DERECHA */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#buscador {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  transition: background 0.3s, border 0.3s;
+}
+
+#buscador::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#buscador:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icono {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+  transition: transform 0.3s;
+}
+
+.icono:hover {
+  transform: scale(1.2);
+}
+
+.user-name {
+    color: #f0f0f0;
+}
+.main-content {
+  padding-top: 120px; /* ajustá este valor según la altura de tu nav */
+}
