@@ -11,7 +11,7 @@ Es el código que se utiliza para que el usuario pueda loguearse en la página
 @version 1.0
 @date 11/06/2025
 */
-require 'database.php';
+require 'YOUR_DATABASE';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
@@ -61,16 +61,16 @@ if (!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['password
         $mail = new PHPMailer(true);
         try {
           $mail->CharSet = 'UTF-8';
-          $mail->addEmbeddedImage('C:/xampp/htdocs/php-login/phpmailer/logo.png', 'logoCID');
+          $mail->addEmbeddedImage('YOUR-LINK-DIRECTION', 'logoCID');
           $mail->isSMTP();
           $mail->Host       = 'smtp.gmail.com';
           $mail->SMTPAuth   = true;
-          $mail->Username   = 'tripwayturismo.oficial@gmail.com';
-          $mail->Password   = 'giehrkfdqhcwmfpb';  
-          $mail->SMTPSecure = 'tls';
-          $mail->Port       = 587;
+          $mail->Username   = 'EMAIL@GMAIL.COM'; //TU EMAIL
+          $mail->Password   = 'LKSNDVLKSDNLKV';  //LA CONTRASEÑA PARA ACCEDER AL EMAIL
+          $mail->SMTPSecure = '';
+          $mail->Port       = ;//TU PUERTO
 
-          $mail->setFrom('tripwayturismo.oficial@gmail.com', 'Tripway');
+          $mail->setFrom('EMAIL', 'NOMBRE');
           $mail->addAddress($email, $name);
 
           $mail->isHTML(true);
