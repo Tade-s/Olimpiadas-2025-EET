@@ -13,11 +13,11 @@ para registrarse o para loguearse
 */
   session_start();
 
-  require 'database.php';
+  require 'your_database';
 
   if (isset($_SESSION['user_id'])) {
     #Conecto la base de datos, la preparo y selecciono los campos id, email, name y password de la tabla users
-    $records = $conn->prepare('SELECT id, email, name, password FROM users WHERE id = :id');
+    $records = $conn->prepare('SELECT id, email, name, password FROM database WHERE id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
