@@ -1,3 +1,11 @@
+/*
+Este archivo es el encargado de contener la funcion de movilidad del carrusel de "inicio.html"
+
+@author Lun Dev
+@version 1.0
+@date fecha de creacion 22/11/2023
+*/
+
 // Paso 1: obtener elementos del DOM
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
