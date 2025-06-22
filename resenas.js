@@ -1,3 +1,13 @@
+/*
+Este archivo contiene una función de cargar reseñas, la cuál sirve por si el usuario desea
+dejar una critica, en la web, ademas de tener 2 reseñas por defecto
+
+@author Duche Tobias
+@version 1.0
+@date 15/06/2025
+
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("reviewForm");
   const nameInput = document.getElementById("name");
