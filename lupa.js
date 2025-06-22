@@ -3,6 +3,7 @@ Este archivo contiene una función de búsqueda, la cuál sirve por si el usuari
 buscar un paquete en especial, que ya haya visto o desea encontrar.
 
 @author Schimpf Tadeo
+@Modificador Duche Tobias
 @version 1.2
 @date 13/06/2025
 
