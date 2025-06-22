@@ -1,4 +1,12 @@
-/* Reset básico */
+/*
+Este archivo es el encargado de contener el estilo de la pestaña "reseñas.html", este
+se encarga de darle el diseño que podemos apreciar en la misma.
+
+@author Duche Tobias
+@version 1.0
+@date fecha de creacion 16/06/2025
+*/
+
 * {
   margin: 0;
   padding: 0;
