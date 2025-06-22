@@ -1,3 +1,11 @@
+/*
+Este archivo es el encargado de contener el estilo de las pestañas que contengan la palabra "1menu", "2menu" y "3menu" 
+en su nombre, se encarga de darle el diseño que podemos apreciar en la misma, asi como carrusel, tamaño de foto y tarjetas
+
+@author Duche Tobias
+@version 2.0
+@date fecha de creacion 11/06/2025
+*/
 
 body {
   font-family: 'Montserrat', sans-serif;
